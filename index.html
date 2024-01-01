@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+            
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+            position: sticky;
+            top: 0px;
+
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+
+        }
+        #about-img{
+            width: 100%;
+        }
+        .sticky{
+            position: fixed;
+            top: 0px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="header">
+        <img src="https://img.freepik.com/premium-vector/nature-logo-design-with-modern-unique-style_475443-1458.jpg?w=360" id="logo" alt="">
+
+     </div>
+     <nav id="menu-bar">
+        <li> Home</li>
+        <li> About Us</li>
+        <li> Our Team</li>
+        <li> Contect Us</li>
+        <li> Client</li>
+
+     </nav>
+     <div id="container">
+        <h1>About Us </h1>
+        <img id='about-img' src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1934,h_993/https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+        <p> 
+            
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ipsum distinctio, 
+            aliquam fugiat sequi eos quidem accusantium molestiae possimus, dolor dolores ipsam nulla 
+            ducimus vero, quasi omnis repellendus modi inventore. Fuga error nesciunt nam
+             blanditiis fugiat laborum vero, illum praesentium totam omnis id molestiae rem magni
+              nostrum natus quis dolor reprehenderit placeat impedit aperiam ut quidem voluptas eum? 
+              Iure, in, eaque at quam, esse culpa ad vero nihil sint ut perspiciatis sed magnam! Veniam 
+              non excepturi harum incidunt repellat doloribus aliquam sunt nam amet nobis quidem numquam 
+              pariatur ipsa illum mollitia, quo ipsum illo dolores iusto saepe tempore quasi beatae?
+        </p>
+        </div>
+        <script>
+            window.addEventListener('scroll',function(){
+                let navbar =document.getAnimations("menu-bar");
+
+                if(window.pageYOffset>=190){
+                    navbar.classList.add('sticky');
+                }
+                else{
+                    navbar.classList.remove('sticky');
+                }
+            });
+        </script>
+    
+</body>
+</html>
